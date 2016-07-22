@@ -55,7 +55,7 @@ set +xv
 if [ "${_build_xrootd}" = "yes" ]; then
   if (not_there xrootd $install_prefix/bin/xrd); then
     cd $SIMPATH/tools/root
-    mypatch ../xrootd_cmake.patch
+#    mypatch ../xrootd_cmake.patch
     build/unix/installXrootd.sh $install_prefix -v $XROOTDVERSION --no-vers-subdir
     if [ "$platform" = "macosx" ]; then
       cd $install_prefix/lib
@@ -106,13 +106,13 @@ then
   mypatch ../root_TGeoShape.patch
 
   # needed due to some problem with the ALICE HLT code
-  mypatch ../root5_34_19_hlt.patch
+#  mypatch ../root5_34_19_hlt.patch
 
   # needed to compile root6 with newer versions of xrootd
-  if [ "$build_root6" = "yes" ]; then
-    mypatch ../root6_xrootd.patch
-    mypatch ../root6_00_find_xrootd.patch
-  fi
+#  if [ "$build_root6" = "yes" ]; then
+#    mypatch ../root6_xrootd.patch
+#    mypatch ../root6_00_find_xrootd.patch
+#  fi
 
 
   if [ "$build_root6" = "no" ]; then
