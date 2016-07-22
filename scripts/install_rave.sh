@@ -27,9 +27,9 @@ checkfile=$install_prefix/lib/libRaveBase.so
 if (not_there rave-lib $checkfile);
 then
 
-  source $SIMPATH/scripts/install_autoconf.sh
-  source $SIMPATH/scripts/install_automake.sh
-  source $SIMPATH/scripts/install_libtool.sh
+#  source $SIMPATH/scripts/install_autoconf.sh
+#  source $SIMPATH/scripts/install_automake.sh
+#  source $SIMPATH/scripts/install_libtool.sh
 
   cd $SIMPATH/tools/rave/
 
