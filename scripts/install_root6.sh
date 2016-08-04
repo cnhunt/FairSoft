@@ -45,10 +45,10 @@ if [ "$platform" = "macosx" ]; then
     cd $SIMPATH/tools/root
     _build_xrootd=no
   else
-    _build_xrootd=yes
+    _build_xrootd=no
   fi
 else
-  _build_xrootd=yes
+  _build_xrootd=no
 fi
 set +xv
 
@@ -56,7 +56,7 @@ if [ "${_build_xrootd}" = "yes" ]; then
   if (not_there xrootd $install_prefix/bin/xrd); then
     cd $SIMPATH/tools/root
 #    mypatch ../xrootd_cmake.patch
-    build/unix/installXrootd.sh $install_prefix -v $XROOTDVERSION --no-vers-subdir
+#    build/unix/installXrootd.sh $install_prefix -v $XROOTDVERSION --no-vers-subdir
     if [ "$platform" = "macosx" ]; then
       cd $install_prefix/lib
       for file in $(ls libXrd*.dylib); do
