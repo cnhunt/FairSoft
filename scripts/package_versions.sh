@@ -19,10 +19,10 @@ export BOOSTVERSION=boost_1_61_0
 export PYTHIA6_LOCATION="https://root.cern.ch/download/"
 export PYTHIA6VERSION=pythia6
 
-export HEPMC_LOCATION="http://lcgapp.cern.ch/project/simu/HepMC/download/"
+export HEPMC_LOCATION="https://lcgpackages.web.cern.ch/tarFiles/sources/"
 export HEPMCVERSION=2.06.09
 
-export PYTHIA8_LOCATION="http://home.thep.lu.se/~torbjorn/pythia8/"
+export PYTHIA8_LOCATION="http://pythia.org/download/pythia82/"
 export PYTHIA8VERSION=pythia8212
 
 export XERCESC_LOCATION="https://archive.apache.org/dist/xerces/c/3/sources/"
@@ -31,7 +31,7 @@ export XERCESCVERSION=3.1.2
 export MESA_LOCATION="ftp://ftp.freedesktop.org/pub/mesa/older-versions/7.x/7.10.3/"
 export MESAVERSION=MesaLib-7.10.3
 
-export GEANT4_LOCATION="http://geant4.cern.ch/support/source/"
+export GEANT4_LOCATION="http://cern.ch/geant4-data/releases/"
 export GEANT4VERSION=geant4.10.02.p01
 export GEANT4VERSIONp=Geant4-10.2.1
 
@@ -39,7 +39,7 @@ export GEANT4VERSIONp=Geant4-10.2.1
 export ROOT_LOCATION="https://github.com/root-mirror/root"
 if [ "$build_root6" = "yes" ]; then
   # Root v6.04.00
-  export ROOTVERSION=v6-06-06
+  export ROOTVERSION=v6-13-02
 else
   # Root v5.34.32
   export ROOTVERSION=v5-34-36
