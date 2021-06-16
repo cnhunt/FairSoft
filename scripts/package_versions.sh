@@ -13,8 +13,8 @@ export GSLVERSION=gsl-1.16
 export ICU_LOCATION="http://download.icu-project.org/files/icu4c/53.1/"
 export ICUVERSION=icu4c-53_1
 
-export BOOST_LOCATION="http://sourceforge.net/projects/boost/files/boost/1.61.0/"
-export BOOSTVERSION=boost_1_61_0
+export BOOST_LOCATION="http://sourceforge.net/projects/boost/files/boost/1.68.0/"
+export BOOSTVERSION=boost_1_68_0
 
 export PYTHIA6_LOCATION="https://root.cern.ch/download/"
 export PYTHIA6VERSION=pythia6
@@ -74,10 +74,10 @@ export PROTOBUF_LOCATION="https://github.com/google/protobuf/releases/download/v
 export PROTOBUF_VERSION=protobuf-2.6.1
 
 export FLATBUFFERS_LOCATION="https://github.com/google/flatbuffers"
-export FLATBUFFERS_BRANCH=v1.3.0
+export FLATBUFFERS_BRANCH=v1.11.0
 
 export MSGPACK_LOCATION="https://github.com/msgpack/msgpack-c.git"
-export MSGPACK_BRANCH=cpp-1.4.1
+export MSGPACK_BRANCH=cpp-3.3.0
 
 export NANOMSG_LOCATION="https://github.com/nanomsg/nanomsg/releases/download/0.8-beta/"
 #export NANOMSG_LOCATION="http://download.nanomsg.org/"
