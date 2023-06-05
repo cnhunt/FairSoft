@@ -6,8 +6,8 @@ then
   cd $SIMPATH/basics
   if [ ! -d MillepedeII ];
   then
-    echo "*** Downloading MillepedeII sources with subversion***"
-    svn co $MILLEPEDE_LOCATION/$MILLEPEDE_VERSION MillepedeII
+    echo "*** Cloning MillepedeII sorces from gitlab***"
+    git clone --depth 1 --branch V04-13-03 https://gitlab.desy.de/claus.kle    inwort/millepede-ii.git MillepedeII
   fi
 fi
 
@@ -32,7 +32,7 @@ then
     mysed "-lgfortran " "-L${fortran_libdir} -lgfortran " Makefile has_slash
   fi
 
-  make
+  make pede
 
   # fake make install
   mkdir -p $install_prefix/bin
